@@ -1,21 +1,48 @@
 # Site settings
 baseURL = "https://example.org/"
 languageCode = "en-US"
-title = "My New Hugo Site"
-theme = "hugo-<update>-theme"
+title = "Visualize by TEMPLATED"
+theme = "hugo-visualize-theme"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
-copyright = "&copy; Untitled"
+copyright = "&copy; Untitled. All rights reserved."
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
 [params]
 
-  # Metadata
-  name = ""
-  description = ""
+  # Header
+  [params.header]
+    avatar = "images/avatar.jpg"
+    intro = "This is **Visualize**, a responsive site template designed by [TEMPLATED](//templated.co)<br>and released for free under the Creative Commons License."
+
+  # Social Icons
+  [[params.social]]
+    label = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com"
+
+  [[params.social]]
+    label = "Facebook"
+    icon = "fa-facebook"
+    url = "https://facebook.com"
+
+  [[params.social]]
+    label = "Instagram"
+    icon = "fa-instagram"
+    url = "https://instagram.com"
+
+  [[params.social]]
+    label = "500px"
+    icon = "fa-500px"
+    url = "https://500px.com"
+
+  [[params.social]]
+    label = "Email"
+    icon = "fa-envelope-o"
+    url = "mailto:email@domain.com"
 
   # The original template is released under the Creative Commons Attribution 3.0 License.
   # Please keep the original attribution link when using for your own project.
   # If you'd like to use the template without the attribution, you can check out
-  # the license option via the template author's website: 
+  # the license option via the template author's website: https://templated.co/license
