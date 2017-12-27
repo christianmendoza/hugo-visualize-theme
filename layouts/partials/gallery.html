@@ -4,16 +4,16 @@
 
   {{- $columns := 3 -}}
   {{- $len := len $imgs -}}
-  {{- $numOfImgs := (add (int (div $len $columns)) 1) -}}
+  {{- $maxImgs := (add (int (div $len $columns)) 1) -}}
 
   <section class="thumbnails">
     {{ range $i, $val := (seq $columns) }}
       <div>
         {{- $.Scratch.Set "imgSet" $imgs -}}
         {{ if gt $i 0 }}
-          {{- $.Scratch.Set "imgSet" (after (mul $i $numOfImgs) $imgs) -}}
+          {{- $.Scratch.Set "imgSet" (after (mul $i $maxImgs) $imgs) -}}
         {{ end }}
-        {{- range first $numOfImgs ($.Scratch.Get "imgSet") }}
+        {{- range first $maxImgs ($.Scratch.Get "imgSet") }}
           <a href="{{ .full | relURL }}">
             <img src="{{ .thumb | relURL }}" alt="{{ .caption }}" />
             <h3>{{ .caption }}</h3>
@@ -22,11 +22,5 @@
       </div>
     {{ end }}
   </section>
-
-{{ else }}
-
-  <div class="align-center">
-    <h2>{{ "Configure ```data/gallery.toml```" | markdownify }}</h2>
-  </div>
 
 {{ end }}

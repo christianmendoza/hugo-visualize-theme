@@ -1,6 +1,6 @@
 <header id="header">
   {{ if .Site.Params.header.avatar }}<span class="avatar"><img src="{{ .Site.Params.header.avatar | relURL }}" alt="{{ .Site.Title }}" /></span>{{ end }}
-  {{ with .Site.Params.header.title }}<h1>{{ . | markdownify }}</h1>{{ end }}
+  {{ with .Site.Params.header.intro }}<h1>{{ . | markdownify }}</h1>{{ end }}
 
   {{ if .Site.Params.social }}
     <ul class="icons">
