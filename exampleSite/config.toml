@@ -1,0 +1,21 @@
+# Site settings
+baseURL = "https://example.org/"
+languageCode = "en-US"
+title = "My New Hugo Site"
+theme = "hugo-<update>-theme"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+copyright = "&copy; Untitled"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+  # Metadata
+  name = ""
+  description = ""
+
+  # The original template is released under the Creative Commons Attribution 3.0 License.
+  # Please keep the original attribution link when using for your own project.
+  # If you'd like to use the template without the attribution, you can check out
+  # the license option via the template author's website: 
