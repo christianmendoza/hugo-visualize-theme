@@ -1,12 +1,13 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "<update>"
+name = "Visualize"
 license = "Creative Commons Attribution 3.0 Unported"
-licenselink = "//github.com/christianmendoza/hugo-<update>-theme/blob/master/LICENSE.md"
-description = ""
-homepage = "//github.com/christianmendoza/hugo-<update>-theme"
-tags = []
+licenselink = "//github.com/christianmendoza/hugo-visualize-theme/blob/master/LICENSE.md"
+description = "Visualize is a simple, one-page portfolio design with a fully functional lightbox."
+homepage = "//github.com/christianmendoza/hugo-visualize-theme"
+tags = ["minimal", "onepage", "one page", "responsive", "image", "gallery", "portfolio"]
+
 features = []
 min_version = "0.21"
 
@@ -16,6 +17,6 @@ min_version = "0.21"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
+  name = "TEMPLATED"
+  homepage = "//templated.co/visualize"
   repo = ""
