@@ -4,9 +4,9 @@
 
 <title>{{ .Title }}</title>
 
-<link href="{{ .URL }}" rel="canonical" />
+<link href="{{ .Permalink }}" rel="canonical" />
 
-<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/main.css" />
 
 <!-- Google Analytics -->
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
